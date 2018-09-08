@@ -1,4 +1,4 @@
-﻿<!-- Last project change: 2018-09-08 21:12:08 (2018-09-08 19:12:08) -->
+﻿<!-- Last project change: 2018-09-08 21:13:09 (2018-09-08 19:13:09) -->
 <PrjQlikViewProject>
   <GLOBAL>
     <AllPropertiesFileName>AllProperties.xml</AllPropertiesFileName>
@@ -13,7 +13,25 @@
     <PrjSheetProperties>
       <SheetId>Document\SH01</SheetId>
       <IsActive>true</IsActive>
-      <ChildObjects></ChildObjects>
+      <ChildObjects>
+        <PrjFrameParentDef>
+          <ObjectId>Document\TX01</ObjectId>
+          <Rect>
+            <Left>1195</Left>
+            <Top>948</Top>
+            <Width>450</Width>
+            <Height>185</Height>
+          </Rect>
+          <MinimizedRect>
+            <Left>0</Left>
+            <Top>0</Top>
+            <Width>297</Width>
+            <Height>102</Height>
+          </MinimizedRect>
+          <ShowMode>1</ShowMode>
+          <ZedLevel>-1</ZedLevel>
+        </PrjFrameParentDef>
+      </ChildObjects>
     </PrjSheetProperties>
   </SHEETS>
   <REPORTS></REPORTS>
