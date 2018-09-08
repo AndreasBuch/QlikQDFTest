@@ -1,0 +1,22 @@
+﻿///$tab QlikView Development Framework
+// QDF need to be initiated using InitLink.qvs or 1.Init.qvs
+// Below ia a basic initiation, Include search for InitLink.qvs in container base folder
+// InitLink.qvs finds and links to 1.Init.qvs
+Let vL.InitLinkPath = Left(DocumentPath(), Index(DocumentPath(), '\1.Application'))& 'InitLink.qvs';
+$(Must_Include=$(vL.InitLinkPath));
+
+// Locale for English
+$(Include=$(vG.LocalePath)\1.US.qvs);
+
+// Use LCGV to link with avalible containers
+// Function: call LCGV('ContainerName','[optional, Specific folder],['optional, pick container map from shared folder']) 
+// call LCGV('Admin'); // will link (mount) all Global Variables in Admin container 
+// call LCGV('Admin','QVD'); // will link (mount) only QVD Global Variable in Admin container (vG.AdminQVDPath)
+call LCGV('Admin','QVD;ConnString'); // will load (mount) QVD and ConnString Global Variable in Admin container (vG.AdminQVDPath,vG.AdminConnSTringPath)
+
+// Example of reusing sub functions in Deployment Framework, in this case DoDir
+// call DoDir ('$(vG.RootPath)');
+
+// Create a folder using 6.CreateFolder.qvs
+// call CreateFolder('$(vG.QVDPath)\03.Example_Northwind'); // will create folder $(vG.QVDPath)\0.Example_Northwind
+
