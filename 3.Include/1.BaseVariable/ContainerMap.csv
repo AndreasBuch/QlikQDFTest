@@ -1,0 +1,6 @@
+Prefix,ContainerName,Comments,AltPath
+Admin,0.Administration,Mandatory administration container,
+Example,1.Example,Container with basic examples,
+M-Smart_Global,2.M-Smart_Global,M-Smart Global Project,
+Shared,99.Shared_Folders,Common content storage,
+Test,3.Test,QDFTest,
